@@ -1,10 +1,16 @@
-<?php 
-    function intro($name, $color) {
-        echo "Hi, my name is $name, and my favorite color is $color<br></br>";
+<?php
+
+$names = ['Benji', 'jane', 'jim', 'jill'];
+// $names = array('Benji', 'jane', 'jim', 'jill');
+
+    $count = 1;
+    // while($count <= 100) {
+    //     echo "<li>$count</li>";
+    //     $count++;
+    // }
+    for($i = 0; $i < count($names); $i++) {      
+        echo "<p>hello, my nam is $names[$i]</p>";
     }
-intro("ben", "red");
-intro("jack", "blue");
 ?>
 
-<h1><?php bloginfo('name'); ?></h1>
-<p><?php bloginfo('description'); ?></p>
+<p>hello, my nam is <?php echo $names[0]; ?></p>
